@@ -1,26 +1,162 @@
-<!-- ===== МУЗЫКА С УПРАВЛЕНИЕМ ===== -->
-<audio id="bg-music" loop>
-    <source src="song.mp3" type="audio/mpeg">
-</audio>
-
-<button onclick="toggleMusic()" style="display: block; margin: 20px auto; padding: 14px 35px; background: #dc0d0d; color: white; border: none; border-radius: 30px; font-size: 18px; cursor: pointer;">
-    🎵 Включить музыку
-</button>
-
-<script>
-    let isPlaying = false;
-    const audio = document.getElementById('bg-music');
-
-    function toggleMusic() {
-        if (isPlaying) {
-            audio.pause();
-            this.textContent = '🎵 Включить музыку';
-            this.style.background = '#dc0d0d';
-        } else {
-            audio.play();
-            this.textContent = '⏸️ Выключить музыку';
-            this.style.background = '#b00a0a';
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>la reina de mi corazón</title>
+    <style>
+        /* ОСНОВНЫЕ СТИЛИ */
+        body {
+            background-image: url('you.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #0d1117;
+            color: #f0e6d3;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+            min-height: 100vh;
+            animation: fadeIn 2.5s ease-out;
         }
-        isPlaying = !isPlaying;
-    }
-</script>
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            color: #dc0d0d;
+            text-shadow: 0 0 25px #dc0d0d, 0 0 50px #dc0d0d;
+            animation: fadeIn 2.5s ease-out 0.4s both;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 27px;
+            color: #a8d5d1;
+            animation: fadeIn 2.5s ease-out 0.8s both;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 19px;
+            font-weight: normal;
+            color: #d4d4d4;
+            animation: fadeIn 2.5s ease-out 1.2s both;
+        }
+
+        h4 {
+            text-align: center;
+            font-size: 23px;
+            color: #a8d5d1;
+            animation: fadeIn 2.5s ease-out 1.6s both;
+        }
+
+        p {
+            text-align: center;
+            font-size: 17px;
+            color: #e8e0d6;
+            animation: fadeIn 2.5s ease-out 2.0s both;
+        }
+
+        .highlight {
+            font-size: 21px;
+            color: #dc0d0d;
+            font-weight: bold;
+        }
+
+        .divider {
+            font-size: 28px;
+            color: #dc0d0d;
+            letter-spacing: 4px;
+        }
+
+        a {
+            color: #ff8a9e;
+            text-decoration: none;
+            border-bottom: 1px solid #ff8a9e;
+        }
+
+        a:hover {
+            color: #ff4d6d;
+            border-bottom-color: #ff4d6d;
+        }
+
+        /* КНОПКА МУЗЫКИ */
+        #music-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 14px 35px;
+            background: #dc0d0d;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #music-btn:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        /* АНИМАЦИЯ ПОЯВЛЕНИЯ */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- МУЗЫКА -->
+    <audio id="bg-music" loop>
+        <source src="emily.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- КНОПКА МУЗЫКИ -->
+    <button id="music-btn" onclick="toggleMusic()">🎵 Включить музыку</button>
+
+    <!-- ТЕКСТ -->
+    <h1>eres mi reina, Emilia</h1>
+    <h2>всегда рядом, всегда тебя люблю.</h2>
+    <h3>прости, что всё так сложилось, я очень скучаю по тебе. если ты дашь мне шанс, если позволишь остаться, я буду самым счастливым. ты прекрасна, ты настоящий цветок, ты мой воздух и моя жизнь. я думаю о тебе каждую секунду, я никогда не смогу выкинуть тебя из головы и забыть... надеюсь, что это достаточно нестандартный для тебя способ признаться в чувствах. я не сидел сложа руки всё это время, и к тому же не могу перестать думать о тебе, искать тебя и варианты принести извинения. всё это время.</h3>
+    <h4>я исправлюсь, я стану лучше. для тебя. для нас.</h4>
+
+    <p class="divider">***</p>
+
+    <p>здравствуй, милая моя подруга,<br>как себя сейчас чувствуешь ты?<br>"я тебя никогда не забуду",<br>прошепчу и отдам цветы.</p>
+    <p>ты, наверное, больше не вспомнишь,<br>задушишь все чувства свои.<br>я тебя никогда не забуду,<br>а ты бей, ненавидь и души...</p>
+    <p>твои мысли я пью кофе крепким,<br>любуясь тобой издали...<br>я тебя никогда не забуду,<br>я ослепну в порыве любви...</p>
+    <p>ты красивей, чем позднее лето,<br>ты живее яркой весны!..<br>я отдам тебе сердце и душу,<br>а ты к себе подпусти...</p>
+    <p>позволь мне тобой любоваться,<br>слышать твой голос вблизи...<br>я его никогда не забуду,<br>сохраню в своей памяти...</p>
+    <p>ты так чудна и красива,<br>как лёгкий и солнечный май...<br>я держу тебя за руку крепко,<br>и не верю, что это явь...</p>
+    <p>отдаюсь тебе я всецело,<br>и прошу - мной повелевай...<br>я тебя никогда не забуду,<br>и счастлив, что знаю тебя...</p>
+
+    <p class="highlight">я говорил тебе раньше, что <u>без ума от тебя</u>.<br>но теперь понимаю, что без ума я <u>без</u> тебя.</p>
+
+    <p>breakfast at Tiffany's — <a href="https://yandex.by/video/touch/preview/3903158903354269235" target="_blank">1:51:00</a></p>
+
+    <!-- СКРИПТ -->
+    <script>
+        let isPlaying = false;
+        const audio = document.getElementById('bg-music');
+        const btn = document.getElementById('music-btn');
+
+        function toggleMusic() {
+            if (isPlaying) {
+                audio.pause();
+                btn.textContent = '🎵 Включить музыку';
+                btn.style.background = '#dc0d0d';
+            } else {
+                audio.play();
+                btn.textContent = '⏸️ Выключить музыку';
+                btn.style.background = '#b00a0a';
+            }
+            isPlaying = !isPlaying;
+        }
+    </script>
+
+</body>
+</html>
