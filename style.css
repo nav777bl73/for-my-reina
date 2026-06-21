@@ -7,7 +7,7 @@ body {
     background-attachment: fixed;
     background-color: #0d1117;
     color: #f0e6d3;
-    font-family: cormorant garamond, sans-serif;
+    font-family: 'cormorant garamond', Georgia, sans-serif;
     padding: 20px;
     max-width: 700px;
     margin: 0 auto;
@@ -16,6 +16,7 @@ body {
 }
 
 h1 {
+    font-family: 'cormorant garamond', Georgia, sans-serif;
     text-align: center;
     font-size: 40px;
     color: #dc0d0d;
@@ -23,12 +24,14 @@ h1 {
 }
 
 h2 {
+    font-family: 'cormorant garamond', Georgia, sans-serif;
     text-align: center;
     font-size: 27px;
     color: #a8d5d1;
 }
 
 h3 {
+    font-family: 'cormorant garamond', Georgia, sans-serif;
     text-align: center;
     font-size: 19px;
     font-weight: normal;
@@ -36,35 +39,41 @@ h3 {
 }
 
 h4 {
+    font-family: 'cormorant garamond', Georgia, sans-serif;
     text-align: center;
     font-size: 23px;
     color: #a8d5d1;
 }
 
 p {
+    font-family: 'cormorant garamond', Georgia, sans-serif;
     text-align: center;
     font-size: 17px;
     color: #e8e0d6;
 }
 
 .highlight {
+    font-family: 'cormorant garamond', Georgia, sans-serif;
     font-size: 21px;
     color: #dc0d0d;
     font-weight: bold;
 }
 
 a {
+    font-family: 'cormorant garamond', Georgia, sans-serif;
     color: #ff8a9e;
     text-decoration: none;
     border-bottom: 1px solid #ff8a9e;
 }
 
 a:hover {
+    font-family: 'cormorant garamond', Georgia, sans-serif;
     color: #ff4d6d;
     border-bottom-color: #ff4d6d;
 }
 
 .divider {
+    font-family: 'cormorant garamond', Georgia, sans-serif;
     font-size: 28px;
     color: #dc0d0d;
     letter-spacing: 4px;
