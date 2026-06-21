@@ -1,5 +1,4 @@
-/* style.css — полные стили для сайта */
-
+/* ===== ОСНОВНЫЕ СТИЛИ ===== */
 body {
     background-image: url('you.jpg');
     background-size: cover;
@@ -7,82 +6,86 @@ body {
     background-attachment: fixed;
     background-color: #0d1117;
     color: #f0e6d3;
-    font-family: 'cormorant garamond', Georgia, sans-serif;
+    font-family: Arial, sans-serif;
     padding: 20px;
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.7;
     min-height: 100vh;
+    
+    /* АНИМАЦИЯ ПОЯВЛЕНИЯ */
+    animation: fadeIn 2.5s ease-out;
 }
+
+/* ===== ЗАГОЛОВКИ И ТЕКСТ ===== */
 h1 {
-    font-family: 'cormorant garamond', Georgia, sans-serif;
     text-align: center;
     font-size: 40px;
     color: #dc0d0d;
     text-shadow: 0 0 25px #dc0d0d, 0 0 50px #dc0d0d;
+    
+    animation: fadeIn 2.5s ease-out 0.4s both;
 }
 
 h2 {
-    font-family: 'cormorant garamond', Georgia, sans-serif;
     text-align: center;
     font-size: 27px;
     color: #a8d5d1;
+    
+    animation: fadeIn 2.5s ease-out 0.8s both;
 }
 
 h3 {
-    font-family: 'cormorant garamond', Georgia, sans-serif;
     text-align: center;
     font-size: 19px;
     font-weight: normal;
     color: #d4d4d4;
+    
+    animation: fadeIn 2.5s ease-out 1.2s both;
 }
 
 h4 {
-    font-family: 'cormorant garamond', Georgia, sans-serif;
     text-align: center;
     font-size: 23px;
     color: #a8d5d1;
+    
+    animation: fadeIn 2.5s ease-out 1.6s both;
 }
 
 p {
-    font-family: 'cormorant garamond', Georgia, sans-serif;
     text-align: center;
     font-size: 17px;
     color: #e8e0d6;
+    
+    animation: fadeIn 2.5s ease-out 2.0s both;
 }
 
+/* ===== СПЕЦИАЛЬНЫЕ ЭЛЕМЕНТЫ ===== */
 .highlight {
-    font-family: 'cormorant garamond', Georgia, sans-serif;
     font-size: 21px;
     color: #dc0d0d;
     font-weight: bold;
 }
 
 a {
-    font-family: 'cormorant garamond', Georgia, sans-serif;
     color: #ff8a9e;
     text-decoration: none;
     border-bottom: 1px solid #ff8a9e;
 }
 
 a:hover {
-    font-family: 'cormorant garamond', Georgia, sans-serif;
     color: #ff4d6d;
     border-bottom-color: #ff4d6d;
 }
 
 .divider {
-    font-family: 'cormorant garamond', Georgia, sans-serif;
     font-size: 28px;
     color: #dc0d0d;
     letter-spacing: 4px;
 }
 
-body {
-    animation: fadeIn 2s ease-in;
-}
-
+/* ===== КЛЮЧЕВЫЕ КАДРЫ (анимация) ===== */
 @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(20px); }
+    0% { opacity: 0; transform: translateY(30px); }
     100% { opacity: 1; transform: translateY(0); }
 }
