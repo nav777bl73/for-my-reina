@@ -96,6 +96,21 @@
     </style>
 </head>
 <body>
+<audio id="bg-music" loop volume="0.3">
+    <source src="emily.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="playMusic()" style="display: block; margin: 20px auto; padding: 12px 30px; background: #dc0d0d; color: white; border: none; border-radius: 30px; font-size: 18px;">
+     Включить музыку
+</button>
+
+<script>
+function playMusic() {
+    const audio = document.getElementById('bg-music');
+    audio.play();
+    alert('Музыка играет!');
+}
+</script>
 
     <h1>eres mi reina, Emilia</h1>
 
