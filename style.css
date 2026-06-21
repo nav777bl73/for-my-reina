@@ -1,0 +1,71 @@
+/* style.css — полные стили для сайта */
+
+body {
+    background-image: url('you.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #0d1117;
+    color: #f0e6d3;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #dc0d0d;
+    text-shadow: 0 0 25px #dc0d0d, 0 0 50px #dc0d0d;
+}
+
+h2 {
+    text-align: center;
+    font-size: 27px;
+    color: #a8d5d1;
+}
+
+h3 {
+    text-align: center;
+    font-size: 19px;
+    font-weight: normal;
+    color: #d4d4d4;
+}
+
+h4 {
+    text-align: center;
+    font-size: 23px;
+    color: #a8d5d1;
+}
+
+p {
+    text-align: center;
+    font-size: 17px;
+    color: #e8e0d6;
+}
+
+.highlight {
+    font-size: 21px;
+    color: #dc0d0d;
+    font-weight: bold;
+}
+
+a {
+    color: #ff8a9e;
+    text-decoration: none;
+    border-bottom: 1px solid #ff8a9e;
+}
+
+a:hover {
+    color: #ff4d6d;
+    border-bottom-color: #ff4d6d;
+}
+
+.divider {
+    font-size: 28px;
+    color: #dc0d0d;
+    letter-spacing: 4px;
+}
